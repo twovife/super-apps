@@ -225,6 +225,8 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('opr_daily_performances');
+        Schema::dropIfExists('opr_daily_express_performances');
+        Schema::dropIfExists('opr_daily_city_performances');
     }
 };
